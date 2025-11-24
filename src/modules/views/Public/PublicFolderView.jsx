@@ -44,7 +44,8 @@ import {
   rename,
   versions,
   selectAllItems,
-  hr
+  hr,
+  summariseByAI
 } from '@/modules/actions'
 import { duplicateTo } from '@/modules/actions/components/duplicateTo'
 import { moveTo } from '@/modules/actions/components/moveTo'
@@ -184,6 +185,9 @@ const PublicFolderView = () => {
     [
       selectAllItems,
       download,
+      hr,
+      summariseByAI,
+      hr,
       moveTo,
       duplicateTo,
       hr,
